@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E7F44F37-B1D1-4409-A6CC-D9F80EE7D3B5}</UniqueIdentifier>
+      <Extensions>cpp;c;h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="s5_screen_player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="s5_frame.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

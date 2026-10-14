@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.Component.MSBuild",
+    "Microsoft.VisualStudio.Component.VC.CoreBuildTools",
+    "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+    "Microsoft.VisualStudio.Component.VC.Tools.ARM64",
+    "Microsoft.VisualStudio.Component.VC.14.50.18.0.x86.x64.Spectre",
+    "Microsoft.VisualStudio.Component.VC.14.50.18.0.ATL.Spectre",
+    "Microsoft.VisualStudio.Component.VC.14.50.18.0.ATL.ARM64.Spectre",
+    "Microsoft.VisualStudio.Component.VC.14.50.18.0.MFC.Spectre",
+    "Microsoft.VisualStudio.Component.VC.14.50.18.0.MFC.ARM64.Spectre",
+    "Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre",
+    "Microsoft.VisualStudio.Component.Windows11SDK.26100",
+    "Component.Microsoft.Windows.DriverKit",
+    "Component.Microsoft.Windows.DriverKit.BuildTools"
+  ]
+}

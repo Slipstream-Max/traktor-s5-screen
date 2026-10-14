@@ -1,0 +1,52 @@
+[Version]
+PnpLockdown=1
+Signature="$WINDOWS NT$"
+Class=USBDevice
+ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider=%ProviderName%
+CatalogFile=s5usb.cat
+DriverVer=10/04/2026,0.1.0.0
+
+[DestinationDirs]
+DefaultDestDir=12
+S5_CopyFiles=12
+
+[Manufacturer]
+%ProviderName%=Standard,NTarm64
+
+[SourceDisksNames]
+1=%DiskName%,,,
+
+[SourceDisksFiles]
+s5usb.sys=1,,
+
+[Standard.NTarm64]
+%DeviceDesc%=S5_Install,USB\VID_17CC&PID_1420&MI_04
+
+[S5_Install.NT]
+CopyFiles=S5_CopyFiles
+
+[S5_CopyFiles]
+s5usb.sys
+
+[S5_Install.NT.Services]
+AddService=s5usb,0x00000002,S5_Service
+
+[S5_Service]
+DisplayName=%ServiceDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\s5usb.sys
+
+[S5_Install.NT.Wdf]
+KmdfService=s5usb,S5_Wdf
+
+[S5_Wdf]
+KmdfLibraryVersion=1.35
+
+[Strings]
+ProviderName="ARM64 S5 transport"
+DiskName="ARM64 S5 transport package"
+DeviceDesc="Traktor Kontrol S5 ARM64 display transport"
+ServiceDesc="Traktor Kontrol S5 ARM64 display transport"

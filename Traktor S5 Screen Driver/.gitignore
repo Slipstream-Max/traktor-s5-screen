@@ -1,0 +1,9 @@
+/build/
+/.vs/
+/dist/
+__pycache__/
+*.pfx
+*.p12
+*.cer
+*.user
+*.suo
